@@ -1,0 +1,665 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header nav {
+    background-color: #bdf0f1;
+    display: flex;
+    justify-content: right;
+    font: 15px 'Oswald', sans-serif;
+    font-weight: 400;
+    gap: 18px;
+    list-style-type: none;
+    padding: 5px 80px;
+    color: #1e5170;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #1e5170;
+}
+header nav #c1 {
+    font-size: 25px;
+}
+
+header nav #c2 {
+    margin-right: 12px;
+}
+
+.headerMain {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Playfair Display', serif;
+    padding: 0 20px;
+}
+
+.headerMain .clgName {
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.clgName img {
+    height: 100px;
+    width: 100px;
+}
+
+.clgName h1 {
+    font-size: 36px;
+    font-weight: normal;
+    color: #313131;
+}
+
+.clgName h3 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #185d85;
+}
+
+.applyNews a {
+    display: block;
+    text-decoration: none;
+    background: linear-gradient(to right, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%);
+    width: auto;
+    margin-top: 10px;
+    padding: 5px 8px;
+    box-shadow: -1px 0 5px #838383;
+}
+
+.applyNews a img {
+    width: 33px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+.applyNews h3 {
+    line-height: 24px;
+    text-shadow: #e1e1e1 0px 1px 1px;
+    padding-left: 15px;
+}
+
+.applyNews #n1 {
+    color: #346484;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.applyNews #n2 {
+    background-color: #346484;
+    margin: 1px 0;
+    padding: 2px 0;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    animation: example 4s infinite;
+}
+
+@keyframes example {
+    0% {
+        background-color: #163180;
+    }
+
+    100% {
+        background-color: #4699ff;
+    }
+}
+
+hr {
+    height:3px;
+    background-color: grey;
+    border: none;
+}
+
+/* Main Section */
+main nav {
+    background-color: #83bcd7;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    list-style-type: none;
+    font: 16px 'Oswald', sans-serif;
+}
+
+main nav li {
+    padding: 15px 15px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+main nav li:hover {
+    background: #92b8e9;
+    color: #404f48;
+}
+
+main nav #sp {
+    animation: example 4s infinite;
+}
+
+main nav #sp:hover {
+    background: #92b8e9;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+/* The dropdown's parent */
+.dropdown { position: relative;}
+
+.dropdown a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.dropdown a:hover {
+    color: #404f48;
+}
+
+/* Show dropdown when mouse is over it */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    transition-delay: 0.4s;
+}
+
+/* Dropdown box */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background: #92b8e9;
+    min-width: 300px;
+}
+
+/* Dropdown options */
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: #404f48;
+    transition: background-color 0.5s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #bdf0f1;
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    display: flex;
+    background-color: #bdf0f1;
+    margin-bottom: 15px;
+}
+
+.banner img {
+    width: 84%;
+}
+
+.banner .newsSection {
+    width: 16%;
+    padding: 8px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.banner .newsSection h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.banner .newsSection hr {
+    height: 2px;
+    border: none;
+    outline: none;
+    background-color: blue;
+}
+
+.banner .newsSection .news {
+    height: 86%;
+    padding: 10px;
+    line-height: 24px;
+}
+
+/* Registration Number */
+.regNum {
+    background-color: #d0f8f9;
+    box-shadow: 0px 3px 10px 2px #4d4d4d80 inset;
+    padding: 20px 65px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #094B9F;
+    text-shadow: -1px -1px 1px #0000007a;
+}
+
+.regNum a {
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    box-shadow: -3px 0px 2px 0px rgba(51, 51, 51, 0.53);
+    padding: 6px 12px;
+    margin: 0px 2px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+}
+
+/* Notices and Important Links */
+.notices {
+    display: flex;
+    justify-content: center;
+}
+
+.notices .notice {
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    line-height: 30px;
+    width: 240px;
+    padding: 12px;
+    margin: 30px 15px;
+}
+
+.notices .notice h1 {
+    font: 32px 'Playfair Display', serif;
+    font-weight: normal;
+    text-align: center;
+    color: #1e1a19;
+    text-shadow: #e1e1e1 0px 1px 1px;
+}
+
+.notice p {
+    padding: 0 10px;
+    max-height: 752px;
+    overflow-y: auto;
+}
+
+.notice ul img {
+    width: 33px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.notices #notice1 { 
+    background-color: #83bcd7;
+}
+
+.notices #notice2 { background-color: #b0e3e4;}
+
+.notices #notice3 { background-color: #bdf0f1;}
+
+.notices #links {
+    background-color: #FFFFFF;
+    box-shadow: 2px -3px 5px 0px rgba(191, 191, 191, 1);
+}
+
+#links ul{
+    list-style-type: none;
+    color: #1e5170
+}
+
+#links ul li:before{
+    font-family: 'FontAwesome';
+    content: '\f101';
+    margin: 0px 10px 0px 0px;
+    color: #191919;
+}
+
+#links ul li{
+    border-bottom: #333 1px dashed;
+}
+
+#links ul li:hover{
+    background-color: #1e5170;
+    color: #ffff;
+}
+
+.notices .notice p, .notices .notice li {
+  cursor: pointer;
+}
+
+/* Articles */
+.articles {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 30px 0;
+}
+
+.articles .article1, .articles .article2 {
+    margin: 12px;
+    padding: 24px;
+    width: 520px;
+    height: auto;
+}
+
+.article2 {
+    background: linear-gradient(to bottom, rgba(131, 188, 215, 0.55) 0%, rgba(131, 188, 215, 0.55) 100%);
+    box-shadow: 3px 3px 5px 0px rgba(179, 179, 179, 1);
+    padding-bottom: 105px;
+}
+
+.article1 h1, .article2 h1 {
+    font: 32px 'Playfair Display', serif;
+    font-weight: normal;
+    color: #343434;
+    text-shadow: #e1e1e1 0px 1px 1px;
+    padding: 20px 0;
+}
+
+.article1 span { color: #2c62bd;}
+
+.article2 img {
+    float: left;
+    width: 230px;
+    height: auto;
+    padding: 4px;
+    margin: 15px 30px 15px 0;
+    border: 1px solid #6586c9;
+}
+
+.article1 p, .article2 p {
+    font: 14px Georgia, "Times New Roman", Times, serif;
+    line-height: 24px;
+    text-align: justify;
+    color: #191919;
+}
+
+.article1 ul li {
+    list-style-type: none;
+    text-align: justify;
+}
+
+.article1 ul p{
+    height: 35px;
+    margin: 10px;
+    padding: 2px;
+    font: 13px 'Pathway Gothic One', sans-serif;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.article1 ul li #colored {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(185, 216, 231) 100%);
+    box-shadow: 3px 3px 2px 0px rgba(171, 171, 171, 1);
+}
+
+.article1 ul li p::before {
+    font-family: 'FontAwesome';
+    content: '\f044';
+    margin: 0 20px 0 0px;
+    color: #2c62bd;
+}
+
+.article2 .sign {
+    margin: 14px 0;
+}
+
+.articles a {
+    background-color: #2c62bd;
+    float: right;
+    margin: 20px 0;
+    padding: 7px 15px;
+    font: 16px 'Oswald', sans-serif;
+    color: #ffff;
+    align-items: right;
+}
+
+.statNumber {
+    height: auto;
+    width: 100%;
+    background-image: url(https://pjc.ac.in/images/indian-express-image.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.statNumber .statNum {
+    background: linear-gradient(to bottom, rgba(131, 188, 215, 0.85) 0%, rgba(131, 188, 215, 0.85) 100%);
+    display: flex;
+    width: 100%;
+}
+
+.statNum .stat {
+    width: 21%;
+    height: auto;
+    padding: 4% 1%;
+    text-align: center;
+    font-size: 16px;
+    color: #191919;
+}
+
+.statNum .stat h1 {
+    color: #ffff;
+    line-height: 46px;
+    padding: 10px;
+    text-align: center;
+    font: 36px 'Oswald', sans-serif;
+    text-shadow: #999 0px 1px 2px;
+}
+
+.galleryArea {
+    width: 100%;
+    display: flex;
+    background-image: url(https://pjc.ac.in/images/rm309-adj-05-ai.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 30px 0;
+    margin: auto;
+}
+
+.galleryArea .notifications {
+    width: 29%;
+    padding: 1%;
+    margin: 10px 2%;
+    border-right: 1px solid #002248;
+}
+
+.notifications h1 {
+    margin-bottom: 20px;
+    font: 28px 'Playfair Display', serif;
+    font-weight: normal;
+    line-height: 32px;
+    color: #343434;
+    text-align: left;
+    text-shadow: 0px 1px 1px #e1e1e1;
+}
+
+.notifications h1 span {
+    color: #185d85;
+}
+
+.notifications .notification {
+    display: flex;
+    margin: 5px 0;
+}
+
+.notification img {
+    width: 40%;
+    margin: 15px 10px;
+    box-shadow: 5px 5px 6px -1px #0202026e;
+}
+
+.notification .info { margin: 14px 0;}
+
+.notification p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.notifications button {
+    display: block;
+    margin: 20px auto;
+    padding: 8px 15px;
+    background-color: #00abff;
+    box-shadow: 5px 4px 4px -2px #00000052;
+    border: none;
+    border-radius: 5px;
+    font: 16px 'Oswald', sans-serif;
+    color: white;
+}
+
+.galleryArea .gallery {
+    width: 60%;
+    margin: 10px 2%;
+}
+
+.gallery h1 {
+    margin-bottom: 20px;
+    font: 28px 'Playfair Display', serif;
+    font-weight: normal;
+    line-height: 32px;
+    color: #343434;
+    text-align: center;
+    text-shadow: 0px 1px 1px #e1e1e1;
+}
+
+.gallery .images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.images img {
+    box-shadow: 5px 5px 6px -1px #0202026e;
+    margin: 8px 0;
+    height: 140px;
+    width: 220px;
+    border: 5px solid #e1e1e1;
+}
+
+.gallery button {
+    display: block;
+    margin: 20px auto;
+    padding: 8px 15px;
+    background-color: #00abff;
+    box-shadow: 5px 4px 4px -2px #00000052;
+    border: none;
+    border-radius: 5px;
+    font: 16px 'Oswald', sans-serif;
+    color: white;
+}
+
+.gallery #youtube { background-color: #ff0000;}
+
+.gallery .anthems, .gallery .extra {
+    display: flex;
+    gap: 10px;
+}
+
+.anthems div, .extra div {
+    width: 40%;
+    height: auto;
+    padding: 2%;
+    margin: 2%;
+    background: linear-gradient(to bottom, #eff9ff 0%, #a4d2f9 100%);
+}
+
+.anthems h1, .extra h1 {
+    margin-bottom: 20px;
+    line-height: 32px;
+    color: #343434;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+}
+
+.anthems iframe, .extra iframe {
+    padding: 2%;
+    margin: 10px auto;
+}
+
+.gallery h2 {
+    text-align: center;
+    color: #346484;
+    font-weight: normal;
+}
+
+/* footer */
+footer {
+    background-color: #191919;
+    color: #ffff;
+    padding: 20px 0px;
+    font-family: 'Playfair Display', serif;
+}
+
+footer .actions {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+}
+
+.actions div {
+    width: 21%;
+    padding: 1%;
+    margin: 1%;
+}
+
+.actions ul { padding: 20px 0;}
+
+.actions ul li {
+    padding: 1%;
+    list-style-type: none;
+}
+
+.actions ul li a::before{
+    font-family: 'FontAwesome';
+    content: '\f101';
+    margin: 0px 10px 0px 0px;
+}
+
+.actions ul li a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.actions p { margin: 20px 0;}
+
+footer .agreements {
+    width: 98%;
+    padding: 15px 0;
+    margin: 10px 1% 0px 1%;
+    border-top: 1px solid #ffff;
+    text-align: center;
+}
+
+.agreements ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.agreements ul li {
+    padding: 5px 20px;
+}
+
+.agreements a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.agreements a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+footer .copyright {
+    width: 98%;
+    padding: 15px 0;
+    text-align: center;
+    font: 15px Georgia, 'Times New Roman', Times, serif;
+    border-top: 1px solid #ffff;
+}
+.copyright p {
+    margin: 14px 0;
+}
+
+.copyright p a {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #2c62bd;
+    text-decoration: none;
+}
